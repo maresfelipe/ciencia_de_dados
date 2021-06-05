@@ -1,22 +1,7 @@
-0 - Importação das bibliotecas necessárias:
-In [1]:
-import pandas as pd
-import numpy as np
-import matplotlib.pyplot as plt
-import seaborn as sns
-import warnings
-warnings.filterwarnings('ignore')
-1 - Leitura dos dados:
-In [2]:
-# Leitura dos DF's
-df_resultado = pd.read_csv('bases\campeonato-brasileiro-full.csv')
-df_estatisticas = pd.read_csv('bases\campeonato-brasileiro-estatisticas-full.csv')
-2 - Manipulação e limpeza de dados com pandas:
-In [3]:
-# Retirando colunas desnecessárias
-df_estatisticas.drop(columns=['Precisão de passe', 'Faltas', 'Cartões amarelos', 'Impedimentos', 'Escanteios', 'Posse de bola','Chutes'], inplace=True)
-df_resultado.drop(columns=['Rodada','Horário','Dia', 'Arena', 'Estado Mandante', 'Estado Visitante', 'Estado Vencedor', 'Visitante', 'Mandante Placar', 'Visitante Placar'], inplace = True)
-
-# Filtrando somente pelos jogos de '2019'
-resultados_2019 = df_resultado[df_resultado['Data'].between('2019-01-01', '2019-12-31')]
-resultados_2019
+Leitura de dados com pandas
+Manipulação e limpeza de dados com pandas
+Descritivo e exploração de dados com pandas (groupbys)
+Figuras que mostrem insights sobre os dados com pandas e matplotlib
+Quebrar os dados em conjunto de treino e conjunto de teste
+Treinar um estimador do scikit-learn de aprendizagem supervisionada (regressor ou classificador) no conjunto de treino
+Verificar o desempenho do estimador do scikit-learn no conjunto de teste
