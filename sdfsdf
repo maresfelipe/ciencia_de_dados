@@ -5,3 +5,4 @@
 # 5 Quebrar os dados em conjunto de treino e conjunto de teste
 # 6 Treinar um estimador do scikit-learn de aprendizagem supervisionada (regressor ou classificador) no conjunto de treino
 # 7 Verificar o desempenho do estimador do scikit-learn no conjunto de teste
+# oi
